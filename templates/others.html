@@ -1,0 +1,226 @@
+
+{% load static %}
+
+<!DOCTYPE html>
+
+
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:site_name" content="Black Code" /> <!-- website name -->
+    <meta property="og:description" content=" The online educational platform that helps you learn anytime, anywhere." /><!-- description shown in the actual shared post -->
+  <!--<meta property="og:image" content= "images/black.png" /> --><!-- image link, make sure it's jpg -->
+  <!--<meta property="og:type" content="article" />-->
+    <meta name="description" content="Black Code">
+    <meta name="author" content="Black Code">
+
+   
+    <title>Contact Us</title>
+    <link rel="icon" href="{% static 'images/black.png' %}">
+    <!-- StyleSheet-->
+    
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/boxicons.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap-login-form.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/reset.css' %}">
+    
+   
+  
+
+
+
+</head>
+
+   
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <div class="logo">
+         <h1 class="text-light"><a href="#"><span>Contact Us</span></a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+       <!--  <a href="#"><img src="images/black.png" alt="#" class="img-fluid"></a>-->
+      </div>
+
+      <nav id="navbar" class="navbar">
+      
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- Login Form -->                    
+  
+  <body>
+    <!-- Start your project here-->
+  
+    <style>
+      .divider:after,
+      .divider:before {
+        content: "";
+        flex: 1;
+        height: 1px;
+        background: #eee;
+      }
+      .error {
+        color: red;
+      
+      }
+    </style>
+    <section class="vh-100">
+      <div class="container py-5 h-100">
+        <div class="row d-flex align-items-center justify-content-center h-100">
+          <div class="col-md-8 col-lg-7 col-xl-6">
+            <img src="{% static 'images/Contact us.svg' %}" class="img-fluid" alt="contact">
+          </div>
+          <div class="col-md-7 col-lg-5 col-xl-5 offset-xl-1">
+            <form action="mailto:blackcode.ng@gmail.com" method="post">
+               <!-- Username -->
+               <div class="form-outline mb-4">
+                <input type="email" placeholder="" name="" required=""  class="form-control form-control-lg" />
+                <label class="form-label" for="form1Example13">Email Address</label>
+              </div>
+  
+              <!-- Email input -->
+             
+  
+              <!-- Password input -->
+              <div class="form-outline mb-4">
+                <input type="text" placeholder="" name=""  required="" class="form-control form-control-lg" />
+               
+                <label class="form-label" for="form1Example23">Course and Topic</label>
+              </div>
+  
+              <div class="d-flex justify-content-around align-items-center mb-4">
+                <!-- Checkbox -->
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                   
+                    
+                    checked
+                  />
+                  <label class="form-check-label" > Get a notification when it has been added </label>
+                </div>
+              
+              </div>
+  
+              <!-- Submit button -->
+              <button type="submit" value="Submit" class="btn btn-primary btn-lg btn-block">Get in Touch</button>
+  
+              
+              <div class="divider d-flex align-items-center my-4">
+                <p class="text-center fw-bold mx-3 mb-0 text-muted">Request for a course to be added for free </p>
+              </div>
+
+              <div class="divider d-flex align-items-center my-4">
+                <p class="text-center fw-bold mx-3 mb-0 text-muted"><a href="https://wa.me/message/7DWHEOUGFOJ4A1" target="_blank">Or send a message on WhatsApp</a></p>
+              </div>
+
+             
+            </form>
+           
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End your project here-->
+
+    <!-- Footer -
+    <footer id="footer">
+
+      <div class="footer-newsletter">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-6">
+              <h4></h4>
+              <p></p>
+             
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+  
+            <div class="col-lg-3 col-md-6 footer-contact">
+              <h3></h3>
+              <p>
+                <br>
+                <br>
+                <br><br>
+                <strong></strong> <br>
+                <strong></strong> <br>
+              </p>
+            </div>
+  
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Useful Links</h4>
+              <ul>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+              </ul>
+            </div>
+  
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Our Services</h4>
+              <ul>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+              </ul>
+            </div>
+  
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Our Social Networks</h4>
+              <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
+              <div class="social-links mt-3">
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              </div>
+            </div>
+  
+          </div>
+        </div>
+      </div>
+  
+      <div class="container py-4">
+        <div class="copyright">
+          &copy; Copyright <strong><span>Ninestars</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+         
+        </div>
+      </div>
+    </footer>--><!-- End Footer -->
+  
+
+
+  
+    <script type="text/javascript" src="{% static 'js/mdb.min.js' %}"></script>
+    <!-- Custom scripts -->
+    
+
+
+  </body>
+
+  
+
+
+   <!-- Login End -->
+
+
+
+</html>
